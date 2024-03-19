@@ -13,6 +13,16 @@ const ProviderData: Record<string, { icon: ReactNode; name: string }> = {
     icon: <Github size={16} />,
     name: "Github",
   },
+  google: {
+    icon: (
+      <img
+        alt="google"
+        src="https://cdn.iconscout.com/icon/free/png-256/free-google-1772223-1507807.png"
+        className="size-4"
+      />
+    ),
+    name: "Google",
+  },
 };
 
 type ProviderButtonProps = {

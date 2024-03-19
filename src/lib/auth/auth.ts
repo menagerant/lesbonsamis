@@ -5,6 +5,7 @@ import MagicLinkMail from "@email/MagicLinkEmail";
 import type { User } from "@prisma/client";
 import type { Session } from "next-auth";
 import NextAuth from "next-auth";
+import Google from "next-auth/providers/google";
 import GitHub from "next-auth/providers/github";
 import Resend from "next-auth/providers/resend";
 import { env } from "../env";
@@ -29,6 +30,10 @@ export const { handlers, auth: baseAuth } = NextAuth((req) => ({
       clientSecret: env.GITHUB_SECRET,
       // This is required because AuthJS beta is not stable.
       allowDangerousEmailAccountLinking: true,
+    }),
+    Google({
+      clientId: env.GOOGLE_CLIENT_ID,
+      clientSecret: env.GOOGLE_SECRET_ID,
     }),
     Resend({
       apiKey: env.RESEND_API_KEY,

@@ -11,6 +11,8 @@ export const env = createEnv({
     DATABASE_URL: z.string().url(),
     GITHUB_ID: z.string().min(1),
     GITHUB_SECRET: z.string().min(1),
+    GOOGLE_CLIENT_ID: z.string().min(1),
+    GOOGLE_SECRET_ID: z.string().min(1),
     RESEND_API_KEY: z.string().min(1),
     RESEND_AUDIENCE_ID: z.string().optional(),
     STRIPE_SECRET_KEY: z.string().min(1),
