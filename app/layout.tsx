@@ -45,8 +45,6 @@ export default function RootLayout({
             />
             {children}
             {modal}
-            <TailwindIndicator />
-            <FloatingLegalFooter />
           </Providers>
         </body>
       </html>

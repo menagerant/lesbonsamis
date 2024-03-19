@@ -4,6 +4,7 @@ import { FAQSection } from "@/features/landing/FAQSection";
 import { FeaturesSection } from "@/features/landing/FeatureSection";
 import { Hero } from "@/features/landing/Hero";
 import { LandingHeader } from "@/features/landing/LandingHeader";
+import { Map } from "@/features/landing/Map";
 import { PainSection } from "@/features/landing/Pain";
 import { SectionDivider } from "@/features/landing/SectionDivider";
 import { StatsSection } from "@/features/landing/StatsSection";
@@ -22,6 +23,8 @@ export default function HomePage() {
     <div className="relative flex h-fit flex-col bg-background text-foreground">
       <div className="mt-16"></div>
       <LandingHeader />
+
+      <Map />
 
       <Hero />
 
